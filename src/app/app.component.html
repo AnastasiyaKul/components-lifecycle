@@ -1,0 +1,23 @@
+<div class = "main">
+
+  <div class = "header">
+    <p>Name: <input type="text" [(ngModel)]="name"></p>
+  </div>
+
+  <div class="skill-item">
+    <div>
+      <app-css [name]="name" (onChangeCss)="getCountCss($event)"></app-css>
+    </div>
+
+    <div>
+      <app-js [name]="name" (onChangeJs)="getCountJs($event)"></app-js>
+    </div>
+
+    <div>
+      <app-ts [name]="name" (onChangeTs)="getCountTs($event)"></app-ts>
+    </div>
+  </div>
+
+  <p class="total">Total: {{countCss + countTs + countJs}}</p>
+
+</div>

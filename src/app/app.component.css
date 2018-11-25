@@ -1,0 +1,50 @@
+div {
+  border: 3px solid #168DF3;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.main {
+  width: 35%;
+  height: 50%;
+
+  margin: auto;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.skill-item > div {
+  border: 2px solid rgba(22, 141, 243, 0.7);
+  position: relative;
+}
+
+.inc,
+.dec {
+  height: 0;
+  width:0;
+  padding: 0;
+  margin: 0;
+
+  border-radius: 0;
+
+  position: absolute;
+  right: 20px;
+}
+
+.inc {
+  bottom: 35px;
+  border: 12px solid transparent;
+  border-bottom: 10px solid rgba(22, 141, 243, 0.7);
+}
+
+.dec {
+  bottom: 0px;
+  border: 12px solid transparent;
+  border-top: 10px solid rgba(22, 141, 243, 0.7);
+  padding-bottom: 5px;
+}
+
+.total {
+  padding-left: 30px;
+}
